@@ -1,0 +1,84 @@
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(pngtree-vector-school-bag-calculator-cyan-cartoon-banner-image_166801.jpg); */
+    background: rgb(255,159,10);
+background: radial-gradient(circle, rgba(255,159,10,1) 0%, rgba(79,71,71,1) 30%);
+    box-shadow: 0px 5px 39px -3px rgba(255,159,10,0.72) inset;
+    -webkit-box-shadow: 0px 5px 39px -3px rgba(255,159,10,0.72) inset;
+    -moz-box-shadow: 0px 5px 39px -3px rgba(255,159,10,0.72) inset;
+}
+.calculator{
+    border-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px grey,
+                5px 5px 12px rgba(0, 0, 0, 0.14);
+                background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+}
+.heading{
+    color: white;
+    font-weight: 900;
+}
+input{
+    grid-column: span 4;
+    width: 260px;
+    height: 50px;
+    background-color: grey;
+    border: none;
+    box-shadow: inset -5px -5px 12px grey,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.14);
+    border-radius: 30px;
+    font-size: 50px;
+    text-align: end;
+    margin: 36px auto;
+    padding: 10px;
+}
+input::placeholder{
+    color: #ff7f50;
+}
+button{
+    width: 52px;
+    height: 52px;
+    background-color: #2A2A2C;
+    color: white;
+    font-size: 20px;
+    /* box-shadow: inset -5px -5px 12px #fff,
+     5px 5px 12px rgba(0, 0, 0, 0.14); */
+    border-radius: 50%;
+    border: none;
+    margin: 8px auto;
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    margin: 8px 12px; 
+    background-color: #FF9F0A; 
+    color: white;
+
+}
+
+.top{
+    background-color: #808080;
+    color: white;
+
+}
+
+.left{
+    background-color: #FF9F0A;
+    color: white;
+
+}
+
+@media screen  and (max-width: 375px) {
+    .heading{
+        font-size: 12px;
+    }
+
+    
+}
